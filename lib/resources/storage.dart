@@ -1,0 +1,1 @@
+const double allPadding = 8;

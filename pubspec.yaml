@@ -1,0 +1,64 @@
+name: dispatch_report_app
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0-330.0.dev <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  intl: 0.18.1
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  line_icons: ^2.0.3
+  image: ^4.0.17
+  sizer: ^2.0.15
+  mvc_pattern: ^8.12.0
+  flutter_secure_storage: ^8.0.0
+  flutter_datetime_picker: ^1.5.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter_icons:
+  android: true
+  ios: true
+  windows: true
+  remove_alpha_ios: true
+  image_path: "assets/intro_image.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
+fonts:
+  - family: SF
+    fonts:
+      - asset: assets/SF-Regular.ttf
+      - asset: assets/SF-RegularItalic.ttf
+      - asset: assets/SF-Bold.ttf
+      - asset: assets/SF-BoldItalic.ttf
+      - asset: assets/SF-Heavy.ttf
+      - asset: assets/SF-HeavyItalic.ttf
+      - asset: assets/SF-Light.ttf
+      - asset: assets/SF-LightItalic.ttf
+      - asset: assets/SF-Medium.ttf
+      - asset: assets/SF-MediumItalic.ttf
+      - asset: assets/SF-Semibold.ttf
+      - asset: assets/SF-SemiboldItalic.ttf
+
+flutter_intl:
+  main_locale: ru
+  enabled: true
