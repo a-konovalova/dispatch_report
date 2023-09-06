@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:dispatch_report_app/resources/theme.dart';
 import 'package:dispatch_report_app/screens/marten_gild/view/marten_gild_screen.dart';
+import 'package:dispatch_report_app/screens/marten_gild/view/more_info_about_melting_screen.dart';
 import 'package:dispatch_report_app/screens/report_parameters/model/parameters_model.dart';
 import 'package:dispatch_report_app/screens/section_rolling_gild/view/section_rolling_gild_screen.dart';
 import 'package:flutter/material.dart';
@@ -88,6 +89,11 @@ class ReportParametersController extends ControllerMVC {
       case "СПЦ" :
         Navigator.of(context).push(MaterialPageRoute(
           builder: (context) => const SectionRollingGildScreen(),
+        ));
+        break;
+      case "ЦЛН" :
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => const MoreInfoAboutMeltingScreen(),
         ));
         break;
       default:
